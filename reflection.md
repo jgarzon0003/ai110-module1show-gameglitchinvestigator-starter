@@ -50,13 +50,16 @@ Document at least 3 bugs you found. Add rows as needed.
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-  - Reruns using 
+  - Streamlit reruns allows for the app to refresh instead of closing the app and re run it. It helps to do in real time. Also since is performed in a virtual environment it will work in all machines.
 
 ---
 
 ## 5. Looking ahead: your developer habits
 
-- What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
+- What is one habit or strategy from this project that you want to reuse in future labs or projects? This could be a testing habit, a prompting strategy, or a way you used Git.
+  - Pytests will be helpful since it isolates each function and make sure it works properly
+  - One/More shot prompts are helpful since it gives the AI the idea on what is happening and what the expected outcome should be. 
 - What is one thing you would do differently next time you work with AI on a coding task?
+  - Not do everything at once. One step at a time although it may take longer to do, it creates stability and maintability.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+  - AI is not always right. It needs to be supervised since sometimes it will do work that works for them but not for you.
