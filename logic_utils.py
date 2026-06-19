@@ -1,4 +1,10 @@
 
+#FIX: Refactored logic into logic_utils.py using agent mode
+'''
+Correctly sets range difficulty. 
+However it won't work because the app needs to detect if there is a change in difficulty,
+game needs to restart with new difficulty. That is for another fix at another function
+'''
 
 def get_range_for_difficulty(difficulty: str):
     """Return (low, high) inclusive range for a given difficulty."""
@@ -19,7 +25,10 @@ def parse_guess(raw: str):
     """
     raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
 
-
+#FIX: Refactored logic into logic_utils.py using agent mode
+'''
+Now when guesses are made, it tells you whether the secret number is higher or lower
+'''
 def check_guess(guess, secret):
     """
     Compare guess to secret and return (outcome, message).

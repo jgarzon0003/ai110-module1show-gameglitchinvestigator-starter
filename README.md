@@ -25,28 +25,47 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] Describe the game's purpose.
+- [x] Detail which bugs you found.
+- [x] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters 50
+2. Game returns "Go LOWER"
+3. User enters 4
+4. Game returns "Go Higher"
+5. User enters 7
+6. Game returns "Correct"
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+(.venv) PS C:\Users\Jhostin\Documents\Codepath\AI 110\Week 2 Project\ai110-module1show-gameglitchinvestigator-starter> python -m pytest tests/test_game_logic.py -v
+============================================================================================================= test session starts =============================================================================================================
+platform win32 -- Python 3.13.7, pytest-9.0.3, pluggy-1.6.0 -- C:\Users\Jhostin\Documents\Codepath\AI 110\Week 2 Project\ai110-module1show-gameglitchinvestigator-starter\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Jhostin\Documents\Codepath\AI 110\Week 2 Project\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.13.0
+collected 11 items                                                                                                                                                                                                                             
+
+tests/test_game_logic.py::test_winning_guess PASSED                                                                                                                                                                                      [  9%]
+tests/test_game_logic.py::test_guess_too_high PASSED                                                                                                                                                                                     [ 18%]
+tests/test_game_logic.py::test_guess_too_low PASSED                                                                                                                                                                                      [ 27%]
+tests/test_game_logic.py::test_easy_range PASSED                                                                                                                                                                                         [ 36%]
+tests/test_game_logic.py::test_normal_range PASSED                                                                                                                                                                                       [ 45%]
+tests/test_game_logic.py::test_hard_range PASSED                                                                                                                                                                                         [ 54%]
+tests/test_game_logic.py::test_difficulty_ordering PASSED                                                                                                                                                                                [ 63%]
+tests/test_game_logic.py::test_too_high_hint_says_go_lower PASSED                                                                                                                                                                        [ 72%]
+tests/test_game_logic.py::test_too_low_hint_says_go_higher PASSED                                                                                                                                                                        [ 81%]
+tests/test_game_logic.py::test_string_secret_compares_numerically PASSED                                                                                                                                                                 [ 90%]
+tests/test_game_logic.py::test_string_secret_win PASSED                                                                                                                                                                                  [100%]
+
+============================================================================================================= 11 passed in 0.03s ==============================================================================================================
 ```
 
 ## 🚀 Stretch Features
